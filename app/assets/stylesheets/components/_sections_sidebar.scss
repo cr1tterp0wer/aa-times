@@ -1,0 +1,56 @@
+#sections-sidebar {
+  // display:none;
+  opacity: 0;
+  position: absolute;
+  z-index: 99;
+  box-shadow: 2px 1px 1px 1px #3d3d3d;
+  padding: 0 50px 10px 10px;
+
+  ul li:hover {
+    background-color:$light-blue;
+    a {
+      background:$light-blue;
+      color:white;
+    }
+  }
+
+}
+
+
+.dropdown {
+    position: relative;
+}
+.dropdown > ul {
+    display: none;
+    position: absolute;
+    right: -150px;
+    /* use top, left, right, bottom to position */
+}
+.dropdown:hover > ul {
+    /* applies the following style to uls inside .dropdown */
+    /* but only when .dropdown is being hovered over */
+    display: block;
+}
+
+.dropdown li {
+    position: relative;
+    background: #d3d3d3;
+    padding: 10px;
+}
+// .dropdown li:after,
+// .dropdown li:before {
+//     content: "";
+//     position: absolute;
+//     right: 0;
+//     top: 25%;
+//     border-left: 5px solid gray;
+//     border-top: 5px solid transparent;
+//     border-bottom: 5px solid transparent;
+//     width: 0;
+//     height: 0;
+// }
+// .dropdown li:after {
+//     right: 2px;
+//     border-left: 5px solid white;
+//     z-index: 1;
+// }

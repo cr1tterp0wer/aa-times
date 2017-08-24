@@ -1,0 +1,86 @@
+
+
+
+@media all and (max-width: 1000px) {
+  [class*='col-'] {
+    width: 100%;
+    display:block;
+    float:none;
+  }
+
+  .aa-content-section {
+    border:none !important;
+  }
+
+  // .language-nav {
+  //   display:none;
+  // }
+
+  .masthead-main-nav {
+    display:none;
+  }
+
+  .right-nav {
+    button {
+      display:none;
+    }
+  }
+
+}
+
+
+
+
+
+
+//
+// MAIN NAV RESPONSIVE
+//
+@media (max-width:420px){
+  .left-nav{
+    display:inline-block;
+  }
+  .right-nav {
+    display:block;
+    border-top:1px solid #eee;
+    ul {
+      float:right;
+      button {
+        margin:0px 20px 0px 0px !important;
+      }
+    }
+
+  }
+
+  #gear-dropdown {
+    left:0;
+    right:0;
+    width:100%;
+    padding:20px;
+
+    ul {
+      span{
+        width:100%;
+        text-align:center;
+        display:block;
+        margin:20px 0 0 0 ;
+      }
+
+    }
+    ul.help,
+    ul.editions{
+      margin: 0 auto;
+      width: 100%;
+      li{text-align:center;}
+    }
+
+  }
+  #sections-sidebar {
+    left: 0;
+    right: 0;
+    padding: 25px 10px;
+    ul li {
+      text-align:center;
+    }
+  }
+}

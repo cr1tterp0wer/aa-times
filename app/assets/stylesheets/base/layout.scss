@@ -1,0 +1,106 @@
+/* Define application-wide selectors here!*/
+
+html {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	font-family:$serif;
+	font-size:12px;
+
+	width:100%;
+	height:100%;
+
+	#main-content {
+		width:inherit;
+		max-width:80%;
+		margin: 0 auto;
+		font-family: inherit;
+		font-size: inherit;
+	}
+}
+html,body,ul,ol,li,p,div,span,a,tr,td,th{
+	-webkit-transition: all 0.2 ease-in-out;
+	 -moz-transition: all 0.2s ease-in-out;
+	 -o-transition: all 0.2s ease-in-out;
+	 -ms-transition: all 0.2s ease-in-out;
+	 transition: all 0.2s ease-in-out;
+}
+button {
+	background-color: $light-blue;
+	border-color: $dark-blue;
+	color:	$white;
+	font-weight: $hv-font;
+	padding: 10px 7px;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	font-family: $sans-serif;
+	text-transform: none;
+	font-size: $sm-font-size;
+	text-align:	center;
+}
+
+button:hover {
+	background-color: $blue;
+	border-color:$dark-blue;
+}
+
+/*
+	Header Rules
+*/
+
+hr {
+	border: 0;
+	height: 1px;
+	background-color: $light-gray;
+}
+
+.hr-top, .hr-bottom {
+	width: 100%;
+	margin: 0;
+}
+
+.hr-top {
+	height: 2px;
+	margin-bottom: 1px;
+}
+
+.va-wrap {
+	position:relative;
+	width:100%;
+	display:block;
+
+	.va {
+		position:absolute;
+		top:50%;
+		left: 50%;
+		transform:translateX(-50%) translateY(-50%);
+	}
+
+}
+
+/*
+	Generic App Times CSS
+*/
+
+h2.title {
+	font-size:$lg-font-size;
+	font-family:$serif;
+	margin: 15px 0px;
+	font-weight:$md-font;
+	width:100%;
+
+}
+
+.center-me {
+	width:100%;
+	margin: 0 auto;
+	text-align:center;
+}
+
+.expand {
+	display:block !important;
+	visibility:visible !important;
+	opacity:1 !important;
+}

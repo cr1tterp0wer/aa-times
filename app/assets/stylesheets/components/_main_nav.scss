@@ -1,0 +1,74 @@
+.main-nav {
+  display:flex;
+  flex-flow: wrap;
+  padding: 10px 0px;
+}
+
+.left-nav {
+  flex: 1;
+}
+.right-nav {
+  flex: 1;
+  ul {
+    float:right;
+  }
+}
+
+.left-nav > ul,
+.right-nav > ul {
+  display:inline-flex;
+}
+
+.left-nav > ul > li {
+  margin: 0 20px 0 0;
+}
+
+.right-nav > ul > li {
+  i.fa.fa-gear {
+    font-size:12pt;
+    padding: 10px 0px;
+    margin:0px 0px 0px 20px;
+  }
+
+  button {
+    margin:0px 0px 0px 20px;
+  }
+}
+
+.right-nav > ul > li:last-of-type {
+
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+
+}
+
+.left-nav span {
+
+}
+
+
+.right-nav i {
+
+}
+
+#search-modal-btn ,
+#sections-sidebar-btn {
+
+  font-weight:$hv-font;
+  font-size:$sm-font-size;
+  font-family:$sans-serif;
+
+  i.fa.fa-search,
+  i.fa.fa-bars {
+    font-size: 12pt;
+    margin-right: 4px;
+  }
+
+  span {
+    font-weight:inherit;
+    font-size:inherit;
+    font-family:inherit;
+  }
+}
